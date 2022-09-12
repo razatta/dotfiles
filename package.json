@@ -1,0 +1,21 @@
+{
+  "name": "dotfiles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "update_scripts_saved": "cp ~/.zshrc ./zsh/ && cp ~/.tmux.conf ./tmux && cp ~/.config/nvim/init.vim ./nvim/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/razatta/dotfiles.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/razatta/dotfiles/issues"
+  },
+  "homepage": "https://github.com/razatta/dotfiles#readme"
+}
