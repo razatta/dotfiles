@@ -28,11 +28,13 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-fugitive'
 Plug 'prettier/vim-prettier',{ 'do': 'yarn install --frozen-lockfile --production' }
-Plug 'dense-analysis/ale' " enables prettier and eslint  
+Plug 'dense-analysis/ale' " enables prettier and eslint
 Plug 'preservim/nerdcommenter'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
-filetype plugin on 
+filetype plugin on
 
 colorscheme gruvbox
 let g:bargreybars_auto=0
@@ -59,3 +61,8 @@ let g:ale_fixers={
 
 
 let g:ale_fix_on_save = 1
+
+" some basic remaps
+
+nnoremap <C-p> :Files<CR>
+nnoremap tt :NERDTreeToggle<CR>
