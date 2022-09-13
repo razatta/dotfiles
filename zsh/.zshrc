@@ -115,9 +115,5 @@ export NVM_DIR="$HOME/.nvm"
 
 # configs for the setup of FD and fzf
 #determines search program for fzf
-export FZF_DEFAULT_COMMAND="fd --exclude={.git,.idea,.vscode,.sass-cache,node_modules,build,tmp} --type f"
 
-export FZF_DEFAULT_OPTS='
---color dark,hl:33,hl+:37,fg+:235,bg+:136,fg+:254
---color info:254,prompt:37,spinner:108,pointer:235,marker:235
-'
+export FZF_DEFAULT_COMMAND="fdfind --exclude={.git,.idea,.vscode,.sass-cache,node_modules,build,tmp} --type f"
